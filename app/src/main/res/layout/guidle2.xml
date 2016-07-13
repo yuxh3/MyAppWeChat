@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/w03">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\透过视频聊天\n你甚至可以和朋友们\n面对面沟通"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_marginTop="45dp"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/confirm_dialog_bg2">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出微信"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出后，你将收不到最新消\n息确定要退出？"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_green"
+            android:text="是"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_white"
+            android:text="否"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

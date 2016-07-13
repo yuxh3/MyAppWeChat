@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar">
+
+        <Button
+            android:id="@+id/login_reback_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_back"
+            android:text="返回"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login_user_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_top_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_editbox"
+        android:hint="QQ号/微信号/手机号（请输入yuhua)"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/login_passwd_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_user_edit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_editbox"
+        android:hint="密码(请输入123)"
+        android:singleLine="true" />
+
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_passwd_edit">
+
+        <Button
+            android:id="@+id/forget_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:background="#0000"
+            android:textColor="#00f"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/login_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:background="@drawable/btn_style_green"
+            android:textColor="#fff"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

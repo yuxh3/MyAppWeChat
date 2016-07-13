@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2010-09-09 18:00"
+            style="@style/chat_text_date_style"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_xiaohei"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/xiaohei"
+            android:clickable="true"
+            android:onClick="xiaoyu"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_xiaohei"
+            style="@style/chat_text_date_style"
+            android:text="小鱼"
+            android:gravity="center"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/tv_msg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatfrom_item"
+            android:layout_toRightOf="@+id/iv_xiaohei"
+            style="@style/chat_text_name_style"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

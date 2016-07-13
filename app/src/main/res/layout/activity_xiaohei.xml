@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详细资料"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_btn_back"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/right_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_right_detial"
+            android:src="@drawable/mm_title_btn_menu_normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_xiaohei"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/xiaohei" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="黑暗游侠"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="微信号：heianyouxia"
+                android:textColor="#99000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_xiaohei"
+        android:layout_below="@+id/rl_xiaohei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_frist_item"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:text="地区"
+                android:textColor="#333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:padding="8dp"
+                android:text="魔兽世界"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_item"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:text="个性签名"
+            android:textColor="#333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:padding="8dp"
+            android:text="我认为我是dota里面最好看的，你有意见？"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:text="手机"
+                android:textColor="#333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:padding="8dp"
+                android:text="110119120114"
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:text="个人相册"
+                android:textColor="#333"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:padding="8dp"
+                android:src="@drawable/xiaohei" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv"
+                android:padding="8dp"
+                android:src="@drawable/renma" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_xiaohei"
+        android:background="@drawable/btn_style_green"
+        android:text="发消息"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

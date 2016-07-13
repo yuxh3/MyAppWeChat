@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#161616">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/exit_dialog_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="退出后不会删除任何历史数据，下次\n登录依然可以使用本账号"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_yes"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style_red"
+                    android:gravity="center"
+                    android:text="退出登录"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_style_white"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

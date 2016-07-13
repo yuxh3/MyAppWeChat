@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bottom_bar">
+
+        <RadioButton
+            android:id="@+id/rb_wechat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:drawableTop="@drawable/tab_wechat"
+            android:button="@null"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="通讯录"
+            android:drawableTop="@drawable/tab_address"
+            android:button="@null"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_frind"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="朋友们"
+            android:drawableTop="@drawable/tab_firend"
+            android:button="@null"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_setting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:drawableTop="@drawable/tab_setting"
+            android:button="@null"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_above="@+id/rg"
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
+
+
+</RelativeLayout>
